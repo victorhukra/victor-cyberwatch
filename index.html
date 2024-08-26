@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor CyberWatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Victor CyberWatch</h1>
+    </header>
+
+    <div class="container">
+        <div class="filters">
+            <h2>Filtros</h2>
+            <label for="crimeType">Tipo de Crime:</label>
+            <select id="crimeType" onchange="filterActivities()">
+                <option value="all">Todos</option>
+                <option value="racismo">Racismo</option>
+                <option value="machismo">Machismo</option>
+                <option value="xenofobia">Xenofobia</option>
+                <option value="ameaca">Ameaça</option>
+            </select>
+        </div>
+
+        <div class="monitor">
+            <h2>Atividades Recentes</h2>
+            <div class="activity-log" id="activityLog">
+                <!-- Logs gerados por JavaScript -->
+            </div>
+        </div>
+
+        <div class="details" id="detailsPanel">
+            <h2>Detalhes da Investigação</h2>
+            <p>Selecione uma atividade para visualizar os detalhes.</p>
+        </div>
+    </div>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
